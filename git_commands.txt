@@ -1,0 +1,77 @@
+
+GIT COMMANDS USED IN THE ASSIGNMENT
+
+1. git --version
+Checks the installed Git version.
+
+2. git init
+Initializes a new Git repository.
+
+3. git status
+Shows the current status of the repository.
+
+4. git branch -M main
+Renames the current branch to main.
+
+5. git add .
+Adds all changed files to the staging area.
+
+6. git commit -m "Initial project setup"
+Saves the initial project files.
+
+7. git commit -m "Updated index page"
+Saves changes made to index.html.
+
+8. git branch feature
+Creates a new branch named feature.
+
+9. git switch feature
+Switches to the feature branch.
+
+10. git commit -m "Added information in about page"
+Saves changes made to about.html.
+
+11. git switch main
+Switches back to the main branch.
+
+12. git merge feature
+Merges the feature branch into main.
+
+13. git add .gitignore
+Adds the .gitignore file to staging.
+
+14. git add about.html index.html
+Stages the updated HTML files.
+
+15. git commit -m "Fixed HTML file structure"
+Saves the HTML structure corrections.
+
+16. git add extra.txt
+Stages the extra.txt file.
+
+17. git commit -m "Added extra file"
+Creates a commit for extra.txt.
+
+18. git revert --no-edit HEAD
+Reverts the latest commit without deleting history.
+
+19. git remote add origin https://github.com/Ishika1409/HTML_Git_Project1.git
+Connects the local repository to GitHub.
+
+20. git remote -v
+Displays the remote repository URL.
+
+21. git fetch origin
+Downloads updates from the remote repository.
+
+22. git pull origin main --allow-unrelated-histories --no-rebase
+Combines the remote main branch with the local repository.
+
+23. git push -u origin main
+Uploads the main branch to GitHub.
+
+24. git push -u origin feature
+Uploads the feature branch to GitHub.
+
+25. git log --oneline --graph --all
+Displays the commit history of all branches.
