@@ -1,0 +1,42 @@
+
+LOGIN SYSTEM - TEST CASES
+
+Test Case ID: TC_01
+Test Scenario: Login with valid credentials
+Input Data: Username = user1, Password = abc123
+Expected Output: Login successful. Dashboard should be displayed.
+
+Test Case ID: TC_02
+Test Scenario: Login with invalid credentials
+Input Data: Username = wronguser, Password = wrong123
+Expected Output: Error message: Invalid username or password.
+
+Test Case ID: TC_03
+Test Scenario: Empty username
+Input Data: Username = blank, Password = abc123
+Expected Output: Error message: Please enter username.
+
+Test Case ID: TC_04
+Test Scenario: Empty password
+Input Data: Username = user1, Password = blank
+Expected Output: Error message: Please enter password.
+
+Test Case ID: TC_05
+Test Scenario: Password less than 6 characters
+Input Data: Username = user1, Password = abc12
+Expected Output: Error message: Password must be at least 6 characters.
+
+Test Case ID: TC_06
+Test Scenario: Password exactly 6 characters
+Input Data: Username = user1, Password = abc123
+Expected Output: Login successful if credentials are correct.
+
+Test Case ID: TC_07
+Test Scenario: Three consecutive failed login attempts
+Input Data: Username = user1, Password = wrong123 (3 times)
+Expected Output: Account should be locked after 3 failed attempts.
+
+Test Case ID: TC_08
+Test Scenario: Login attempt after account lock
+Input Data: Username = user1, Password = abc123
+Expected Output: Login should be denied because the account is locked.
